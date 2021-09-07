@@ -5,7 +5,7 @@ int main()
 {
   double x,y;
   scanf("%lf",&x);
-  
+
   //x4 za 2
   y = x;
   y = y*y;
@@ -45,7 +45,7 @@ int main()
   y = y*y;
   printf("%lf",y);
   printf("%s", "\n");
-  
+
   //x64 za 6
   y = x;
   y = y*y;
@@ -56,4 +56,4 @@ int main()
   y = y*y;
   printf("%lf",y);
   printf("%s", "\n");
-}
+} 
