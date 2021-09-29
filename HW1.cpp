@@ -1,23 +1,20 @@
 /******************************************************************************
 
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+C#, VB, Perl, Swift, Prolog, Javascript, Pascal, HTML, CSS, JS
+Code, Compile, Run and Debug online from anywhere in world.
 
 *******************************************************************************/
-
-#include <iostream>
-#include <cmath>
-
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
-    double t = 365;
-    double x = 1+(1/3);
-    x = 7 + (1/x);
-    x = 4 + (1/x);
-    x = 1/x;
+    double t = 365.0;
+    double x = 1.0+(1.0/3);
+    x = 7.0 + (1.0/x);
+    x = 4.0 + (1.0/x);
+    x = 1.0/x;
     t = t + x;
     printf("%lf",t);
 }
