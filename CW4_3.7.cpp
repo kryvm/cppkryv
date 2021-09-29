@@ -1,11 +1,3 @@
-/******************************************************************************
-
-                              Online C++ Compiler.
-               Code, Compile, Run and Debug C++ program online.
-Write your code in this editor and press "Run" button to compile and execute it.
-
-*******************************************************************************/
-
 #include <iostream>
 #include <math.h>
 
@@ -18,17 +10,17 @@ int main()
     printf("a= b= c=?\n");
     double res,dis;
     scanf("%lf %lf %lf",&a,&b,&c);
-    if(a == 0)
+    if(a == 0.0)
     {
         res = 1;
     }
     else
     {
         dis = b*b - 4*a*c;
-        if(dis<0)
+        if(dis<0.0)
         {
             res = 0;
-        }else if(dis==0)
+        }else if(dis==0.0)
         {
             res = 1;
         }else
@@ -41,14 +33,14 @@ int main()
     printf("ax^2 + bx + c = 0\n");
     printf("a= b= c=?\n");
     double res1,dis1,x1,x2;
-    if(a == 0)
+    if(a == 0.0)
     {
         x1 = (-1)*c/b;
-        if(x1>0)
+        if(x1>0.0)
         {
             res1 = 2;
         }
-        else if(x1 == 0)
+        else if(x1 == 0.0)
         {
             res1 = 1;
         }
@@ -60,17 +52,17 @@ int main()
     else
     {
         dis1 = b*b - 4*a*c;
-        if(dis1<0)
+        if(dis1<0.0)
         {
             res1 = 0;
-        }else if(dis1==0)
+        }else if(dis1==0.0)
         {
             x1 = (-1)*b/(2*a);
-            if(x1 > 0)
+            if(x1 > 0.0)
             {
                 res1 = 2;
             }
-            else if(x1 == 0)
+            else if(x1 == 0.0)
             {
                 res1 = 1;
             }
@@ -82,11 +74,11 @@ int main()
         {
             x1 = ((-1)*b + sqrt(dis1))/(2*a);
             x2 = ((-1)*b - sqrt(dis1))/(2*a);
-            if(x1 > 0)
+            if(x1 > 0.0)
             {
                 res1 = 2;
             }
-            else if(x1 == 0)
+            else if(x1 == 0.0)
             {
                 res1 = 1;
             }
@@ -94,11 +86,11 @@ int main()
             {
                 res1 = 0;
             }
-            if(x2 > 0)
+            if(x2 > 0.0)
             {
                 res1 = res1 + 2;
             }
-            else if(x2 == 0)
+            else if(x2 == 0.0)
             {
                 res1 = res1 + 1;
             }
@@ -109,4 +101,6 @@ int main()
         }
     }
     printf("Решений = %lf\n",res1);
+}
+
 }
