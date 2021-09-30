@@ -35,18 +35,25 @@ int main()
     double res1,dis1,x1,x2;
     if(a == 0.0)
     {
-        x1 = (-1)*c/b;
-        if(x1>0.0)
+        if(b != 0.0)
         {
-            res1 = 2;
-        }
-        else if(x1 == 0.0)
-        {
-            res1 = 1;
+            x1 = (-1)*c/b;
+            if(x1>0.0)
+            {
+                res1 = 2;
+            }
+            else if(x1 == 0.0)
+            {
+                res1 = 1;
+            }
+            else
+            {
+                res1 = 0;
+            }
         }
         else
         {
-            res1 = 0;
+            res1 = 0
         }
     }
     else
