@@ -10,7 +10,7 @@ int main()
     printf("a= b= c=?\n");
     double res,dis;
     scanf("%lf %lf %lf",&a,&b,&c);
-    if(a == 0.0)
+    if(fabs(a)<0.00001)
     {
         res = 1;
     }
@@ -20,7 +20,7 @@ int main()
         if(dis<0.0)
         {
             res = 0;
-        }else if(dis==0.0)
+        }else if(fabs(dis)<0.00001)
         {
             res = 1;
         }else
@@ -33,7 +33,7 @@ int main()
     printf("ax^2 + bx + c = 0\n");
     printf("a= b= c=?\n");
     double res1,dis1,x1,x2;
-    if(a == 0.0)
+    if(fabs(a)<0.00001)
     {
         if(b != 0.0)
         {
@@ -42,7 +42,7 @@ int main()
             {
                 res1 = 2;
             }
-            else if(x1 == 0.0)
+            else if(fabs(x1)<0.00001)
             {
                 res1 = 1;
             }
@@ -53,7 +53,7 @@ int main()
         }
         else
         {
-            res1 = 0
+            res1 = 0;
         }
     }
     else
@@ -62,14 +62,14 @@ int main()
         if(dis1<0.0)
         {
             res1 = 0;
-        }else if(dis1==0.0)
+        }else if(fabs(dis1)<0.00001)
         {
             x1 = (-1)*b/(2*a);
             if(x1 > 0.0)
             {
                 res1 = 2;
             }
-            else if(x1 == 0.0)
+            else if(fabs(x1)<0.00001)
             {
                 res1 = 1;
             }
@@ -85,7 +85,7 @@ int main()
             {
                 res1 = 2;
             }
-            else if(x1 == 0.0)
+            else if(fabs(x1)<0.00001)
             {
                 res1 = 1;
             }
@@ -97,7 +97,7 @@ int main()
             {
                 res1 = res1 + 2;
             }
-            else if(x2 == 0.0)
+            else if(fabs(x2)<0.00001)
             {
                 res1 = res1 + 1;
             }
@@ -108,6 +108,4 @@ int main()
         }
     }
     printf("Решений = %lf\n",res1);
-}
-
 }
