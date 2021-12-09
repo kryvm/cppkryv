@@ -1,0 +1,3 @@
+kryv 2 compmath1 2 2 2 2 2
+motruk 2 compmath1 1 1 1 1 1
+babich 2 compmath1 5 5 5 5 5
